@@ -1,6 +1,6 @@
-article {
+﻿body
+{
 }
-
 a:link {
     background-color: peachpuff;
     color: black;
@@ -10,11 +10,4 @@ a:link {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-}
-
-body {
-}
-h1 {
-    text-align: center;
-    font-size: 35px;
 }
