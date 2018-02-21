@@ -2,7 +2,7 @@ article {
 }
 
 a:link {
-    background-color: peachpuff;
+    background-color: #0099ff;
     color: black;
     padding: 14px 25px;
     border-width: 5px;
@@ -10,11 +10,18 @@ a:link {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    margin-right: 25px;
 }
 
 body {
 }
-h1 {
+p1 {
+    font-size: 15px;
     text-align: center;
-    font-size: 35px;
+}
+body {
+    background-color: lightblue;
+}
+#Navbar {
+    background-color: blue;
 }
