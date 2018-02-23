@@ -1,13 +1,6 @@
 ﻿body
 {
 }
-a:link {
-    background-color: peachpuff;
-    color: black;
-    padding: 14px 25px;
-    border-width: 5px;
-    border-color: black;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+.stationsAfbeelding {
+    width: 250px;
 }
