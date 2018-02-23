@@ -19,3 +19,9 @@ p1 {
     font-size: 15px;
     text-align: center;
 }
+body {
+    background-color: black;
+}
+p2 {
+   color: white;
+}
