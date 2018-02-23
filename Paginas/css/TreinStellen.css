@@ -17,13 +17,19 @@ a:link {
     display: inline-block;
 }
 
-body {
-    background-color: yellow;
-}
-
 ul{
     list-style-image: "https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4e/Boots_of_Speed_item.png/revision/latest?cb=20171221060501";
     color: aquamarine;
     padding: 15px;
     background: black;
+}
+
+.treinAfbeelding {
+    width: 400px;
+}
+.treintekst {
+    color: white;
+}
+#alt {
+    color: white;
 }
