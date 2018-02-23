@@ -1,0 +1,21 @@
+﻿body
+{
+}
+a:link {
+    background-color: #0099ff;
+    color: black;
+    padding: 14px 25px;
+    border-width: 5px;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+#Navbar {
+    background-color: blue;
+}
+p1 {
+    font-size: 15px;
+    text-align: center;
+}
