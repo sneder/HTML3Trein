@@ -1,27 +1,32 @@
-﻿body
-{
-}
-a:link {
+﻿a:link {
     background-color: #0099ff;
     color: black;
-    padding: 14px 25px;
-    border-width: 5px;
+    padding: 10px 14px;
+    border-width: 10px;
     border-color: black;
     text-align: center;
     text-decoration: none;
+    font-family: 'trebuchet ms';
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 5px;
 }
-#Navbar {
+nav, footer{
     background-color: blue;
+    font-family: 'trebuchet ms';
+    font-size: 18px;
 }
-p1 {
-    font-size: 15px;
-    text-align: center;
-}
+
 body {
-    background-color: black;
+    background-color: rgb(51, 51, 51);
 }
-p2 {
+
+p {
    color: white;
+   font-family: 'trebuchet ms';
 }
+
+h1,h2,h3,h4,h5,h6 {
+    color: lightblue;
+    font-family: 'trebuchet ms';
+}
+
