@@ -20,3 +20,7 @@ ul{
 .trainImage {
     width: 400px;
 }
+table, th, td {
+    border: 1px solid lightblue;
+    color: white;
+}
