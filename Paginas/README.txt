@@ -7,3 +7,4 @@ JOBS:
 2. Contextual menu= Knop met opties
 3. FLOT library
 4. Jquery
+5. KnowledgeBase: Database, Informatie opslaan, 
