@@ -1,14 +1,19 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>Plot</title>
     <link rel="stylesheet" type="text/css" href="css/plot.css" />
     <link rel="stylesheet" type="text/css" href="css/shared.css" />
+    <!--Getting the two libraries of jQuery and flot-->
     <script language="javascript" type="text/javascript" src="scripts/flot/jquery.js"></script>
-	<script language="javascript" type="text/javascript" src="scripts/flot/jquery.flot.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/flot/jquery.flot.js"></script>
+    <!--Getting the script for this specific page-->
+    <script type="text/javascript" src="scripts/plot.js"></script>
 </head>
+
 <body>
     <nav id="Navbar">
         <a href="home.html">Home</a>
@@ -19,8 +24,25 @@
         <a href="plot.html">graph</a>
         Trains in the Netherlands
     </nav>
-    <div id="graph"></div>
+    <section>
+        <div id="graph"></div>
+        <p>
+            <button autofocus=true id="Button1">
+                Change this
+            </button>
+            Dit is een Button die op dit moment nog niks doet, maar straks hopelijk wel. En dan staat hier de informatie over wat hij
+            dan eignelijk doet.
+        </p>
+        <p>
+            <button id="Button2">
+                Change this
+            </button>
+            Dit is ook zo'n button, maar dan button 2
+        </p>
+    </section>
 
-    <script type="text/javascript" src="scripts/plot.js"></script>
+
+   
 </body>
+
 </html>
