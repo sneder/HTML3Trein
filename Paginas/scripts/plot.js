@@ -1,5 +1,3 @@
-Button1Click();
-
 function makeGraph(d1, year) {
     $.plot("#graph",
         [{ label: "Number of delays per month; " + year, data: d1 }],
@@ -34,3 +32,4 @@ function Button3Click() {
 }
 var button1 = document.getElementById("Button1");
 button1.addEventListener("click", function () { });
+Button1Click();
