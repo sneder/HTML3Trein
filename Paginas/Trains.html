@@ -7,6 +7,7 @@
     <title>Dutch Trains</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/Trains.css" />
     <link rel="stylesheet" type="text/css" href="css/shared.css" />
+    <script type="text/javascript" src="scripts/contextmenu.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,15 @@
         <a href="trains.html">Train Types</a>
         <a href="plot.html">Graph</a>
         Trains in the Netherlands
+        <button onclick="bold()">Toggle bold</button>
+        <button onclick="italic()">Toggle italic</button>
+        <select onchange="kleur()" id="kleurselect">
+            <option value="white">white</option>
+            <option value="yellow">yellow</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            
+        </select>
     </nav>
     <section>
         <h1>
@@ -34,7 +44,7 @@
                 <b>R</b>egio
                 <b>M</b>ateriaal
             </p>
-            <p>The Enlengthened Inter-Regio Material is a train type that the NS uses as an intercity. VIRM-6 and VIRM-4 are
+            <p id="text">The Enlengthened Inter-Regio Material is a train type that the NS uses as an intercity. VIRM-6 and VIRM-4 are
                 the only ones still currently in use. VIRM-6 is a train with 6 carriages, whereas VIRM-4 is a train with
                 4 carriages. They can be connected together interchangibaly. For example a VIRM-6 with a VIRM-4 to make a
                 10 carriage train. Also 3 VIRM-4's or 2 VIRM-6's to make a 12 carriage train. Etc.
