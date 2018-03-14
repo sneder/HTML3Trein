@@ -24,10 +24,10 @@ function italic() {
             p[i].style.fontStyle = "italic";
         }
     }
-}
 
+}
 function kleur() {
-    var x = document.getElementById("kleurselect").value;
+    var x = document.getElementById("kleurSelect").value;
     for (i = 0; i < p.length; i++) {
         p[i].style.color = x;
     }
