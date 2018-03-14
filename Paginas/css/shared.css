@@ -10,6 +10,19 @@
     display: inline-block;
     margin-right: 5px;
 }
+button
+{
+    background-color: #0099ff;
+    color: black;
+    padding: 10px 14px;
+    border-width: 0px;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'trebuchet ms';
+    display: inline-block;
+    margin-right: 5px;  
+}
 nav, footer{
     background-color: blue;
     font-family: 'trebuchet ms';
