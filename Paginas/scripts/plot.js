@@ -4,14 +4,17 @@ $(function () {
     var d1 = [[1, 420], [2, 340], [3, 330], [4, 280], [5, 370], [6, 360], [7, 325], [8, 260], [9, 345], [10, 355], [11, 335], [12, 340]];
 
     $.plot("#graph",
-        [{ label: "Number of delays in 2017", data: d1 }],
+        [{ label: "Number of delays; 2017", data: d1 }],
         {
             bars:{
-                show: true
+                show: true,
+                align: "middle"
             },
             yaxis: {
-                min: 0
-                
+                min: 0     
+            },
+            xaxis:{
+                ticks: [[1,"Jan"],[2,"Feb"],[3,"Mrt"],[4,"Apr"],[5,"May"],[6,"Jun"],[7,"Jul"],[8,"Aug"],[9,"Sept"],[10,"Oct"],[11,"Nov"],[12,"Dec"],]
             }
         });
 
@@ -19,6 +22,9 @@ $(function () {
 
     $(footer).prepend("Flot " + $.plot.version + " &ndash; ");
 });
+
+
+
 function Button1Click() {
     var d1 = [[1, 212], [2, 222], [3, 213], [4, 203], [5, 261], [6, 274], [7, 283], [8, 244], [9, 294], [10, 244], [11, 313], [12, 268]]
 
@@ -40,7 +46,7 @@ function Button2Click() {
                 min: 0
             }
         });
-}
+};
 
 function Button3Click() {
     var d1 = [[1, 350], [2, 369], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0]];
@@ -53,3 +59,5 @@ function Button3Click() {
             }
         });
 }
+var button1 = document.getElementById("Button1");
+button1.addEventListener("click", function(){});

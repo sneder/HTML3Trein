@@ -3,8 +3,5 @@ Thomas Mosterd 6280838
 WEBTECH 28 FEB 2018
 
 JOBS:
-1. DOM Manipulation
-2. Contextual menu= Knop met opties
-3. FLOT library
-4. Jquery
-5. KnowledgeBase: Database, Informatie opslaan, 
+1. DOM Created Page
+2. Event Propagation (plot.js onderaan)
