@@ -2,7 +2,7 @@
 var p = document.getElementsByTagName("p");
 var i;
 function bold() {
-    if (document.getElementById("text").style.fontWeight == "bold") {
+    if (p[0].style.fontWeight == "bold") {
         for (i = 0; i < p.length; i++) {
             p[i].style.fontWeight = "normal";
         }
@@ -14,7 +14,7 @@ function bold() {
     }
 }
 function italic() {
-    if (document.getElementById("text").style.fontStyle == "italic") {
+    if (p[0].style.fontStyle == "italic") {
         for (i = 0; i < p.length; i++) {
             p[i].style.fontStyle = "normal";
         }
