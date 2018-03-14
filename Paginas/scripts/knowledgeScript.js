@@ -33,6 +33,7 @@ class imgArticle extends article {
   createArticle() {
     super.createArticle();                            //Executing the old things
     var makeImage = document.createElement("img");    //Creating the image
+    makeImage.src=this.image;
     makeImage.alt = "an image"
     var a = document.getElementById(this.title);      //Adding the Image
     a.appendChild(makeImage)
@@ -43,7 +44,7 @@ class imgArticle extends article {
 class vidArticle extends article {
   constructor(name, content, youtubeUrl) {
     super(content, name);
-    var video;
+    var video= "";
     var i;
     for (i = youtubeUrl.length-1; youtubeUrl[i] != "="; i = i - 1) {
       video =  youtubeUrl[i]+ video;
@@ -66,8 +67,8 @@ class vidArticle extends article {
 function start() {
   let test = new article("Jason is awesome", "Uitleg waarom jason awesome is");
   test.createArticle();
-  let test2 = new imgArticle("I'm testing", "testing so hard", "probaly an imagelocation of somesort")
+  let test2 = new imgArticle("I'm testing", "testing so hard", "https://image.spreadshirtmedia.net/image-server/v1/mp/designs/7152074,width=178,height=178/een-beetje-gay-is-okay.png")
   test2.createArticle();
-  let test3 = new vidArticle("Sicke Skills", "JASON NOSCOPE EM", "https://www.youtube.com/watch?v=lahiGrNxqU4")
+  let test3 = new vidArticle("Sicke Skills", "JASON NOSCOPE EM", "https://www.youtube.com/watch?v=BzTYd-MZKj0")
   test3.createArticle();
 }
