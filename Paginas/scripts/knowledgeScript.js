@@ -24,9 +24,11 @@ class article {
 }
 class imgArticle extends article {
   constructor(name,content,image){
-    this.title = name;
-    this.content = content;
+    super(content, name);
     this.image=image
+  }
+  createArticle(){
+    
   }
 }
 class vidArticle extends article {
@@ -34,12 +36,6 @@ class vidArticle extends article {
 }
 
 function start() {
-  var para = document.createElement("p");
-  var node = document.createTextNode("cykablyat");
-  para.appendChild(node);
-
-  var element = document.getElementById("div1");
-  element.appendChild(para);
   let test = new article("Jason is awesome", "Uitleg waarom jason awesome is");
   test.createArticle();
   let test2= new imgArticle("I'm testing", "testing so hard", "probaly an imagelocation of somesort")
