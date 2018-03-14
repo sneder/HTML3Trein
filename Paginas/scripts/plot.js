@@ -35,6 +35,6 @@ function button3Click() {
     makeGraph(d1, 2018);
 }
 
-//attempt at proper eventlisteners
-var button1 = document.getElementById("Button1");
-button1.addEventListener("click", function () { });
+function onLoad() {
+    button2Click();
+};

@@ -7,9 +7,29 @@
     <title>Dutch Trains</title>
     <script language="javascript" type="text/javascript" src="scripts/flot/jquery.js"></script>
     <script language="javascript" type="text/javascript" src="scripts/knowledgeScript.js"></script>
+    <script type="text/javascript" src="scripts/contextmenu.js"></script>
     <link rel="stylesheet" type="text/css" href="css/shared.css" />
 </head>
 
-<body onload="start()"> 
+<body onload="start()">
+    <nav id="Navbar">
+        <a href="home.html">Home</a>
+        <a href="clips.html">Clips</a>
+        <a href="stations.html">Stations</a>
+        <a href="the_NS.html">The NS</a>
+        <a href="trains.html">Train Types</a>
+        <a href="plot.html">Graph</a>
+        <a href="knowledge.html">Knowledge Base</a>
+        Trains in the Netherlands
+        <button onclick="bold()">Toggle bold</button>
+        <button onclick="italic()">Toggle italic</button>
+        <select onchange="kleur()" id="kleurSelect">
+            <option value="white">white</option>
+            <option value="yellow">yellow</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+        </select>
+    </nav>
 </body>
+
 </html>
