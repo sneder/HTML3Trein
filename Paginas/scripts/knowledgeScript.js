@@ -22,6 +22,12 @@ class article {
     a.appendChild(makeTitle);
     a.appendChild(makeContent);
   }
+  connectArticleTo(articleToConnectTo, articleName){
+    var makeLink = document.createElement("a");
+    makeLink.href=articleToConnectTo;
+    var a = document.getElementById(this.title);
+    a.appendChild(makeLink);
+  }
 }
 
 //The article with an image class
@@ -70,5 +76,6 @@ function start() {
   let test2 = new imgArticle("I'm testing", "testing so hard", "https://image.spreadshirtmedia.net/image-server/v1/mp/designs/7152074,width=178,height=178/een-beetje-gay-is-okay.png")
   test2.createArticle();
   let test3 = new vidArticle("Sicke Skills", "JASON NOSCOPE EM", "https://www.youtube.com/watch?v=BzTYd-MZKj0")
+  test3.connectArticleTo("The_NS.html", "waddup")
   test3.createArticle();
 }
