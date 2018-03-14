@@ -7,6 +7,7 @@
     <title>Dutch Trains</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/Trains.css" />
     <link rel="stylesheet" type="text/css" href="css/shared.css" />
+    <script language="javascript" type="text/javascript" src="scripts/flot/jquery.js"></script>
     <script type="text/javascript" src="scripts/contextmenu.js"></script>
 </head>
 
@@ -21,7 +22,7 @@
         Trains in the Netherlands
         <button onclick="bold()">Toggle bold</button>
         <button onclick="italic()">Toggle italic</button>
-        <select onchange="kleur()" id="kleurselect">
+        <select onchange="kleur()" id="kleurSelect">
             <option value="white">white</option>
             <option value="yellow">yellow</option>
             <option value="red">red</option>
@@ -78,7 +79,7 @@
             <img src="sources/sgmm.jpg" class="trainImage" alt="Picture of SGMM Train">
         </article>
 
-        <article class="treintekst">
+        <article>
             <h3>
                 Atributes of Train types
             </h3>
