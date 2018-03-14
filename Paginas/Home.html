@@ -8,19 +8,27 @@
     <meta name="keywords" content="Trains, Netherlands, Rails, Railways, NS">
     <title>Dutch Trains</title>
     <link rel="stylesheet" type="text/css" href="css/shared.css" />
+    <script type="text/javascript" src="scripts/contextmenu.js"></script>
 </head>
 
 <body>
-        <nav id="Navbar">
-                <a href="home.html">Home</a>
-                <a href="clips.html">Clips</a>
-                <a href="stations.html">Stations</a>
-                <a href="the_NS.html">The NS</a>
-                <a href="trains.html">Train Types</a>
-                <a href="plot.html">Graph</a>
-                <a href="knowledge.html"> knowledgeBase</a>
-                Trains in the Netherlands
-            </nav>
+    <nav id="Navbar">
+        <a href="home.html">Home</a>
+        <a href="clips.html">Clips</a>
+        <a href="stations.html">Stations</a>
+        <a href="the_NS.html">The NS</a>
+        <a href="trains.html">Train Types</a>
+        <a href="plot.html">Graph</a>
+        Trains in the Netherlands
+        <button onclick="bold()">Toggle bold</button>
+        <button onclick="italic()">Toggle italic</button>
+        <select onchange="kleur()" id="kleurselect">
+            <option value="white">white</option>
+            <option value="yellow">yellow</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+        </select>
+    </nav>
             <h1>
                 Home
             </h1>
