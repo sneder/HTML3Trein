@@ -5,3 +5,4 @@ WEBTECH 28 FEB 2018
 JOBS:
 1. DOM Created Page
 2. Event Propagation (plot.js onderaan)
+3. Contextual menu (bold-italics-none)
