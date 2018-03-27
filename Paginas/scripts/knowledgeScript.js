@@ -89,11 +89,4 @@ function start() {
   Article3.createArticle();
   Article3.connectArticleTo("clips.html", "Source");
   Article3.connectArticleTo("Trains.html", "Trains")
-<<<<<<< HEAD
-=======
-
-  let ArticleAwesome = new vidArticle("Jason is fucking awesome","Hello i am amazing","https://www.youtube.com/watch?v=847wBf-9Z9w")
-  ArticleAwesome.createArticle();
-
->>>>>>> 5627cdca2b3c5b6a02542fc943c0f9ebf06f46af
 }
