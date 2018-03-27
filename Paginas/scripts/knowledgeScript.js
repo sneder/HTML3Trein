@@ -89,5 +89,4 @@ function start() {
   Article3.createArticle();
   Article3.connectArticleTo("clips.html", "Source");
   Article3.connectArticleTo("Trains.html", "Trains")
-
 }
