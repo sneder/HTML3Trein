@@ -7,7 +7,7 @@ var product = class {
         
     }
 };
-createProduct() {
+function createProduct() {
     var makeProduct = document.createElement("article")
     makeProduct.id = this.name;
 

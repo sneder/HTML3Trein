@@ -6,13 +6,14 @@
     <meta name="author" content="Jason Steijn, Thomas Mosterd">
     <title>ChooChooShop</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script src="../js/login.js"></script>
 </head>
 
-<body>
+<body onload="loginLoad()">
     <nav>
         <a href="index.html">Homepage</a>
         <a href="products.html">All Products</a>
-        <a href="profile.html">Profile</a>
+        <a href="login.html">Profile</a>
         Search
         <input id="searchBar">
         <a href="about.html">About</a>
@@ -20,14 +21,14 @@
     <h1>
         Login
     </h1>
-    <form action="">
+    <form id="loginForm">
         Email:
         <input type="text" name="email">
         <br> Password:
         <input type="text" name="password">
         <br>
-        <input type="submit" value="Submit">
     </form>
+    <button onclick="submitForm()">Submit</button>
     <p>
         <a href="createAccount.html">Don't have an account?</a>
     </p>
