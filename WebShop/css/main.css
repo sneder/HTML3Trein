@@ -4,6 +4,33 @@
     font-family: 'trebuchet ms';
 }
 
+img {
+    width: 80%; 
+}
+
+
+/*
+Position of the sidebar and productlist
+*/
+side {
+    height: 100%;
+    width: 170px;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 42px; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */ 
+}
+
+#productlist{
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 42px; /* Stay at the top */
+    left: 180px;
+}
+
 /*
 CSS for Nav
 */
@@ -18,8 +45,6 @@ nav a:link {
     background-color: #0099ff;
     color: black;
     padding: 10px 14px;
-    border-width: 10px;
-    border-color: black;
     text-align: center;
     text-decoration: none;
     display: inline-block;
