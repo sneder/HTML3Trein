@@ -1,0 +1,9 @@
+- Try to access the Database in JS
+- Fill database a bit more(30 products, 10 different wattages/lengths, 10 different manufacturers)
+- Node.js (Express.js) for serverside
+- AJAX (dislpaying products in group per page) What is it even lol
+- Log HTTP Requests
+- Set website up in server
+XTRA
+- Comments, Ratings 
+
