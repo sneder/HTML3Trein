@@ -1,4 +1,0 @@
-open command prompt.
->SET DEBUG=app2(of hoe je shit ook heet):* & npm start
-dan naar localhost:3000(of wat er ok in de app staat)
-en shit werkt
