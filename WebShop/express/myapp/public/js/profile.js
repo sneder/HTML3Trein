@@ -14,7 +14,7 @@ function profileLoad() {
 function updateInformation(username) {
 
     //The function to get the information
-    $.getJSON("./data/Accounts.json", function (r) {
+    $.getJSON("data/Accounts.json", function (r) {
         console.log(r);
         //A loop that runs through all the users 
         //and finds the right user
@@ -43,7 +43,7 @@ function updateInformation(username) {
             document.getElementById("gender").innerHTML = "Gender: Female"
         }  
 
-        document.getElementById("picture").src = "../"+user.UserName
+        document.getElementById("picture").src = "Images/"+user.UserName+".jpg"
     });
 }
 
@@ -51,3 +51,15 @@ function updateInformation(username) {
 function updateHistory(user) {
 
 }
+
+//Changing the personal information of the user
+function changeInformation(){
+
+}
+
+//Loggin out the user
+function logout(){
+    sessionStorage.user= "Nowone";
+    window.open("login.html", "_self");
+}
+

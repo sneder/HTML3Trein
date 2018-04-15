@@ -5,11 +5,10 @@ aswel as for the createAccount.html page
 
 //Checking if someone has already logged in, if so take them to their profile, if not take them to the login page
 function loginLoad() {
-    if (sessionStorage.user === undefined) {
-
+    if (sessionStorage.user === undefined || sessionStorage.user == "Nowone") {   
     }
     else {
-        window.open("../profile.html", "_self");
+        window.open("profile.html", "_self");
     }
 }
 
@@ -45,7 +44,7 @@ function submitForm() {
         //The actions to be executed after looping through all users.
         if (succesful) {
             //Open their profile
-            window.open("../profile.html", "_self");
+            window.open("profile.html", "_self");
         }
         else {
             //Error message
