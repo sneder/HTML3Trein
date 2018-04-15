@@ -36,13 +36,12 @@ function createAccount() {
         alert("Not all information entered!")
     }
 
+    //
     var db = new sqlite3.Database("./Db/webShopDatabse");
     alert(db);
 
     var sql = "INSERT INTO Accounts (UserName, Password, Name, PostalCode, Email, BirthDate, Gender) VALUES('"  + u + z + p + z + n + z + p + z + bD + z + e + z + g +"')";
     console.log(sql);
-
-
 }
 
 //Changing the personal information of the user
