@@ -46,20 +46,22 @@
         </p>
         <p>
             Email:
-            <input type="text" name="email">
+            <input type="email" name="email">
             <br>
         </p>
         <p>
             Birth date:
-            <input type="text" name="birthDate">
+            <input type="date" name="birthDate">
             <br>
         </p>
         <p>
             Gender:
-            <input type="text" name="gender">
+            <select id="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
             <br>
         </p>
-
     </form>
     <button onclick="changeAccount()">
         Change Account

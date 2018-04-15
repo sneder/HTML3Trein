@@ -21,10 +21,19 @@ The last two attributes of Transactions are Foreign Keys, linking to TrainID and
 
 
 Logins: 
-username, password
+(username, password)
 sneder, 12345
 Admin, admin
 thomas, train
+apollo, sun
+zeus, thunder
+hera, family
+poseidon, sea
+aphrodite, love
+ares, war
+
+
+DDL Stateents:
 
 CREATE TABLE Accounts (
     UserName   VARCHAR UNIQUE
