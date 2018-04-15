@@ -6,29 +6,49 @@ The pages that have to do with changing an account
 //Creating a new entry in the database for this person
 function createAccount() {
     var x = document.getElementById("createForm").elements
-    var username = x["username"].value;
-    var password = x["password"].value;
-    console.log(x);
-    x.forEach(element => {
-        var element = element.value 
-    });
+
+    //getting all the variables
+    var u = x["username"].value;
+    var p = x["password"].value;
+    var n = x["name"].value;
+    var pC = x["postalCode"].value;
+    var bD = x["birthDate"].value;
+    var e = x["email"].value;
+    var g = x["gender"].value;
+    var z = "','";
+
+    //logging those variables
     console.log(
-        "Username: "+ username +
-        "Password: "+ password +
-        "Name: "+ name + 
-        "Postal Code: "+ postalCode +
-        "Email: " + email +
-        "Birth date: "+ birthDate +
-        "Gender "+ gender
+        "Username: " + u +
+        " Password: " + p +
+        " Name: " + n +
+        " Postal Code: " + pC +
+        " Email: " + e +
+        " Birth date: " + bD +
+        " Gender " + g
     );
+
+    //Throw a fit i've you've forgotten to enter something
+    if(u&&p&&n&&pC&&bD&&e&&g){
+
+    }
+    else{
+        alert("Not all information entered!")
+    }
+
+    var db = new sqlite3.Database("./Db/webShopDatabse");
+    alert(db);
+
+    var sql = "INSERT INTO Accounts (UserName, Password, Name, PostalCode, Email, BirthDate, Gender) VALUES('"  + u + z + p + z + n + z + p + z + bD + z + e + z + g +"')";
+    console.log(sql);
+
+
 }
 
 //Changing the personal information of the user
 function changeAccount() {
     user = returnUserObject();
 }
-
-
 
 function returnUserObject() {
     var username = sessionStorage.user;
