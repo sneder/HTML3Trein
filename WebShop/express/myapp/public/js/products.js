@@ -35,7 +35,7 @@ $(document).ready(function () {
 		//pop-up confirming purchase
 		$(".buybutton").click(function () {
 			buymessage(r[this.id].Name)
-	});
+		});
 	});
 	$("#more").click(function () {
 		$.getJSON("./data/Trains.json", function (r) {
@@ -48,14 +48,14 @@ $(document).ready(function () {
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
-						p + pri + r[i].PriceGRAND +"000" + np +
+						p + pri + r[i].PriceGRAND + "000" + np +
 						b + i + b2 + nd
 					);
 				};
 			});
 			$(".buybutton").click(function () {
 				buymessage(r[this.id].Name)
-	});
+			});
 		});
 		//remove the more button
 		$("#more").remove();
@@ -73,14 +73,14 @@ $(document).ready(function () {
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
-						p + pri + r[i].PriceGRAND +"000" + np +
+						p + pri + r[i].PriceGRAND + "000" + np +
 						b + i + b2 + nd
 					);
 				};
 			});
 			$(".buybutton").click(function () {
 				buymessage(r[this.id].Name)
-	});
+			});
 		});
 		//remove the button
 		$("#evenmore").remove();
@@ -113,14 +113,14 @@ $(document).ready(function () {
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
-						p + pri + r[i].PriceGRAND +"000" + np +
+						p + pri + r[i].PriceGRAND + "000" + np +
 						b + i + b2 + nd
 					);
 				};
 			});
 			$(".buybutton").click(function () {
 				buymessage(r[this.id])
-	});
+			});
 		});
 	});
 	//refresh the page and reset any filters
@@ -131,8 +131,16 @@ $(document).ready(function () {
 
 //buy pop-up
 function buymessage(product) {
-	if(confirm("Are you sure you want to buy a " + product + "?")){
-		alert("Thanks for buying a "+product + "!")
+	if (confirm("Are you sure you want to buy a " + product + "?")) {
+		alert("Thanks for buying a " + product + "!")
 		//And execute actually buying the product. Entering it into the SQL table called "Transactions"
+
+		var d = new Date(); 
+		d.getHours(); 
+		d.getMinutes();
+		d.getSeconds();
+		
+		//This is where we would want to execute this statement into our database,but have -after many attempts(even php god forbid)- failed to do so.
+		var sql = "INSERT INTO Transactions ('TransactionID ', 'Time', 'ProductBought', 'Buyer') VALUES('','"+d+",'"+product+""+sessionStorage.user;
 	}
 };
