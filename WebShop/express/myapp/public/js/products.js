@@ -128,7 +128,11 @@ $(document).ready(function () {
 		location.reload();
 	});
 });
+
 //buy pop-up
 function buymessage(product) {
-	alert("Thanks for buying a "+product + "!")
+	if(confirm("Are you sure you want to buy a" + product + "?")){
+		alert("Thanks for buying a "+product + "!")
+		//And execute actually buying the product. Entering it into the SQL table called "Transactions"
+	}
 };
