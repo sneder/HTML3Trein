@@ -14,7 +14,6 @@ Position of the sidebar and productlist
 */
 side {
     height: 100%;
-    width: 170px;
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 42px; /* Stay at the top */
@@ -28,7 +27,7 @@ side {
     position: absolute; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 42px; /* Stay at the top */
-    left: 180px;
+    left: 10%;
 }
 
 /*
