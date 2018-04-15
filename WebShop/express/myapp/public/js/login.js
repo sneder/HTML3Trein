@@ -54,7 +54,15 @@ function submitForm() {
 
 }
 
+//Moving to the account creation page from the login page
+function pageCreate(){
+    window.open("createAccount.html", "_self");
+}
+
 //Creating a new entry in the database for this person
 function createAccount() {
+    var x = document.getElementById("createForm")
+    var username = x.elements["username"].value;
+    var password = x.elements["password"].value;
 
 }
