@@ -22,7 +22,7 @@ $(document).ready(function () {
 			if (i < 10) {
 				$('.product').append(
 					d + h + r[i].Name + nh +
-					img1 + i + img2 +
+					'<img class="trainimg" src="images/' + i + '.jpg" alt="product">' +
 					p + PiK + r[i].PowerKW + np +
 					p + man + r[i].Manufacturer + np +
 					p + yoc + r[i].YearOfConstruction + np +
@@ -40,7 +40,7 @@ $(document).ready(function () {
 				if (i > 9 & i < 20) {
 					$('.moreProduct').append(
 						d + h + r[i].Name + nh +
-						img1 + i + img2 +
+						'<img class="trainimg" src="images/' + i + '.jpg" alt="product">' +
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
@@ -59,7 +59,7 @@ $(document).ready(function () {
 				if (i > 19) {
 					$('.moreProduct').append(
 						d + h + r[i].Name + nh +
-						img1 + i + img2 +
+						'<img class="trainimg" src="images/' + i + '.jpg" alt="product">' +
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
@@ -89,7 +89,7 @@ $(document).ready(function () {
 				) {
 					$('.Product').append(
 						d + h + r[i].Name + nh +
-						img1 + i + img2 +
+						'<img class="trainimg" src="images/' + i + '.jpg" alt="product">' +
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
