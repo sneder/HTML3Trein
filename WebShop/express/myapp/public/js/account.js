@@ -36,15 +36,16 @@ function createAccount() {
         alert("Not all information entered!")
     }
 
-    // 
-    require sqlite3();
-    var db = new sqlite3.Database(':memory:');
-    alert(db);
+   
 
     var sql = "INSERT INTO Accounts (UserName, Password, Name, PostalCode, Email, BirthDate, Gender) VALUES('" + u + z + p + z + n + z + p + z + bD + z + e + z + g + "')";
     console.log(sql);
+}
 
-    db.run(sql);
+function test(){
+    $.post("script.php", {num:5}, function(result){
+        alert(result);
+    })
 }
 
 //Changing the personal information of the user
