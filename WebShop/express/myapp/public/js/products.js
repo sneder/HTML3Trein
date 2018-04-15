@@ -12,11 +12,8 @@ $(document).ready(function () {
 	var nd = "</div>"
 	var h = "<h3>"
 	var nh = "</h3>"
-	var b = "<button id=:'"
-	var b1 = "'onclick='buy("
-	var b2 = ")'>Buy Now!</button>"
-
-
+	var b = "<button class='buybutton' id="
+	var b2 = ">Buy Now!</button>"
 	$.getJSON("./data/Trains.json", function (r) {
 		$.each(r, function (i, field) {
 			if (i < 10) {
@@ -26,13 +23,16 @@ $(document).ready(function () {
 					p + PiK + r[i].PowerKW + np +
 					p + man + r[i].Manufacturer + np +
 					p + yoc + r[i].YearOfConstruction + np +
-					p + pri + r[i].PriceGRAND + np +
-					b + r[i].Name + b1 + r[i].Name + b2 + nd
+					p + pri + r[i].PriceGRAND + "000" + np +
+					b + i + b2 + nd
 				);
 				console.log(" Product receival succes");
 				console.log("Button made" + r[i].Name)
 			}
 		});
+		$(".buybutton").click(function () {
+			maakmodel(r[this.id].Name)
+	});
 	});
 	$("#more").click(function () {
 		$.getJSON("./data/Trains.json", function (r) {
@@ -44,11 +44,14 @@ $(document).ready(function () {
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
-						p + pri + r[i].PriceGRAND + np +
-						b + r[i].Name + b1 + r[i].Name + b2 + nd
+						p + pri + r[i].PriceGRAND +"000" + np +
+						b + i + b2 + nd
 					);
 				};
 			});
+			$(".buybutton").click(function () {
+				alert(r[this.id].Name)
+	});
 		});
 		$("#more").remove();
 		$("#evenmore").css("display", "block")
@@ -63,11 +66,14 @@ $(document).ready(function () {
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
-						p + pri + r[i].PriceGRAND + np +
-						b + r[i].Name + b1 + r[i].Name + b2 + nd
+						p + pri + r[i].PriceGRAND +"000" + np +
+						b + i + b2 + nd
 					);
 				};
 			});
+			$(".buybutton").click(function () {
+				alert(r[this.id].Name)
+	});
 		});
 		$("#evenmore").remove();
 	});
@@ -93,17 +99,20 @@ $(document).ready(function () {
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
-						p + pri + r[i].PriceGRAND + np +
-						b + r[i].Name + b1 + r[i].Name + b2 + nd
+						p + pri + r[i].PriceGRAND +"000" + np +
+						b + i + b2 + nd
 					);
 				};
 			});
+			$(".buybutton").click(function () {
+				maakmodel(r[this.id])
+	});
 		});
 	});
 	$("#reset").click(function () {
 		location.reload();
 	});
 });
-function buy(product) {
-
-} 
+function maakmodel(product) {
+	alert(product)
+};

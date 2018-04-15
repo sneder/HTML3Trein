@@ -24,18 +24,15 @@
         <h2>
             Search options
         </h2>
-        <button id='reset'>
-            refresh
-        </button>
         </br>
         <label class="flabel">Manufacturer</label>
         <select id="Man">
             <option value="default" selected>Manufacturer</option>
-            <option value="hoi">hoi</option>
-            <option value="Bombardier Transportation">hey</option>
-            <option value="jo">jo</option>
+            <option value="CAF">CAF</option>
+            <option value="Bombardier Transportation">Bombardier Transportation</option>
+            <option value="Stadler">Stadler</option>
         </select>
-        </br>
+        </br></br>
         <label class="flabel">Power in kW</label>
         <select id="PKW">
             <option value="default" selected>Power in Kilowatts</option>
@@ -45,18 +42,21 @@
             <option value="1200">1200</option>
             <option value="800">800</option>
         </select>
-        </br>
+        </br></br>
         <label class="flabel">Year of construction</label>
-        <input id="YoC">
-        </br>
+        <input id="YoC" placeholder="e.g. 2017">
+        </br></br>
         <label class="flabel">Min Price</label>
-        <input id="miPr">
-        </br>
+        <input id="miPr" placeholder="0">
+        </br></br>
         <label class="flabel">Max Price</label>
-        <input id="maPr">
-        </br>
+        <input id="maPr" placeholder="1 000 000 000">
+        </br></br>
         <button id="apply">
             Apply
+        </button>
+        <button id='reset'>
+            reset
         </button>
         </section>
     </side>
