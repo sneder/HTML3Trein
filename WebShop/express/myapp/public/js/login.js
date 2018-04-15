@@ -8,7 +8,7 @@ function loginLoad() {
     if (sessionStorage.user === undefined || sessionStorage.user == "Nowone") {   
     }
     else {
-        window.open("../profile.html", "_self");
+        window.open("profile.html", "_self");
     }
 }
 
@@ -44,7 +44,7 @@ function submitForm() {
         //The actions to be executed after looping through all users.
         if (succesful) {
             //Open their profile
-            window.open("../profile.html", "_self");
+            window.open("profile.html", "_self");
         }
         else {
             //Error message
