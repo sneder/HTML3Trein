@@ -36,10 +36,10 @@ function updateInformation(username) {
         document.getElementById("email").innerHTML = "Email: " + user.Email;
         document.getElementById("postalCode").innerHTML = "Postal Code: " + user.PostalCode;
 
-        if (user.Gender = "M") {
+        if (user.Gender == "M") {
             document.getElementById("gender").innerHTML = "Gender: Male"
         }
-        if (user.Gender = "F") {
+        if (user.Gender == "F") {
             document.getElementById("gender").innerHTML = "Gender: Female"
         }
 

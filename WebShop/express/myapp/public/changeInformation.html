@@ -11,7 +11,7 @@
     <script type="text/javascript" src="js/account.js"></script>
 </head>
 
-<body>
+<body onload="insertValues()">
     <nav>
         <a href="index.html">Homepage</a>
         <a href="products.html">All Products</a>
@@ -63,5 +63,11 @@
     </form>
     <button onclick="changeAccount()">
         Change Account
+    </button>
+    <button onclick="deleteAccount()">
+        Delete Account
+    </button>
+    <button onclick="returnToProfile()">
+        Return(and cancel changes)
     </button>
 </body>
