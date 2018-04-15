@@ -31,7 +31,7 @@ $(document).ready(function () {
 			}
 		});
 		$(".buybutton").click(function () {
-			maakmodel(r[this.id].Name)
+			buymessage(r[this.id].Name)
 	});
 	});
 	$("#more").click(function () {
@@ -50,7 +50,7 @@ $(document).ready(function () {
 				};
 			});
 			$(".buybutton").click(function () {
-				alert(r[this.id].Name)
+				buymessage(r[this.id].Name)
 	});
 		});
 		$("#more").remove();
@@ -72,7 +72,7 @@ $(document).ready(function () {
 				};
 			});
 			$(".buybutton").click(function () {
-				alert(r[this.id].Name)
+				buymessage(r[this.id].Name)
 	});
 		});
 		$("#evenmore").remove();
@@ -105,7 +105,7 @@ $(document).ready(function () {
 				};
 			});
 			$(".buybutton").click(function () {
-				maakmodel(r[this.id])
+				buymessage(r[this.id])
 	});
 		});
 	});
@@ -113,6 +113,6 @@ $(document).ready(function () {
 		location.reload();
 	});
 });
-function maakmodel(product) {
-	alert(product)
+function buymessage(product) {
+	alert("Thanks for buying a "+product + "!")
 };
