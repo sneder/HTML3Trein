@@ -24,6 +24,7 @@
         </h2>
         </br>
         <label class="flabel">Manufacturer</label>
+        <!--The filter for the manufacturer -->
         <select id="Man">
             <option value="default" selected>Manufacturer</option>
             <option value="CAF">CAF</option>
@@ -32,6 +33,7 @@
         </select>
         </br></br>
         <label class="flabel">Power in kW</label>
+        <!--The filter for the PowerKW -->
         <select id="PKW">
             <option value="default" selected>Power in Kilowatts</option>
             <option value="2400">2400</option>
@@ -41,6 +43,7 @@
             <option value="800">800</option>
         </select>
         </br></br>
+        <!--Input fields for the year of construction and the min or max price. -->
         <label class="flabel">Year of construction</label>
         <input id="YoC" placeholder="e.g. 2017">
         </br></br>
@@ -50,29 +53,33 @@
         <label class="flabel">Max Price</label>
         <input id="maPr" placeholder="1 000 000 000">
         </br></br>
+        <!--button to apply the filters -->
         <button id="apply">
             Apply
         </button>
+        <!--Reset the filters and refresh the page -->
         <button id='reset'>
             reset
         </button>
         </section>
     </side>
+    <!--Section containing the products -->
     <section id="productlist">
         <h1>
             Products
         </h1>
         <section class="productsection">
+        	<!--This contains the 10 products shown upon loading the page-->
             <div class="product"></div>
         </section>
         <section class="moreProduct">
             </br>
+            <!--The button which makes the page show 10 more products -->
             <button id="more">more</button>
         </section>
-        <section class="evenMoreProduct">
             </br>
+            <!--The button that shows when the first one is clicked, it allows for 10 more products to be shown -->
             <button hidden id="evenmore">more</button>
-        </section>
     </section>
 
 </body>
