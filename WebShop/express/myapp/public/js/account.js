@@ -36,8 +36,9 @@ function createAccount() {
         alert("Not all information entered!")
     }
 
-    //
-    var db = new sqlite.Database(':memory:');
+    // 
+    require sqlite3();
+    var db = new sqlite3.Database(':memory:');
     alert(db);
 
     var sql = "INSERT INTO Accounts (UserName, Password, Name, PostalCode, Email, BirthDate, Gender) VALUES('" + u + z + p + z + n + z + p + z + bD + z + e + z + g + "')";
