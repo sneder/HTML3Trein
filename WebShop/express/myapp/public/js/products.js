@@ -27,7 +27,7 @@ $(document).ready(function () {
 					p + PiK + r[i].PowerKW + np +
 					p + man + r[i].Manufacturer + np +
 					p + yoc + r[i].YearOfConstruction + np +
-					p + pri + r[i].PriceGRAND + "000" + np +
+					p + pri + r[i].PriceGRAND +  np +
 					b + i + b2 + nd
 				);
 			}
@@ -48,7 +48,7 @@ $(document).ready(function () {
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
-						p + pri + r[i].PriceGRAND + "000" + np +
+						p + pri + r[i].PriceGRAND + np +
 						b + i + b2 + nd
 					);
 				};
@@ -73,7 +73,7 @@ $(document).ready(function () {
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
-						p + pri + r[i].PriceGRAND + "000" + np +
+						p + pri + r[i].PriceGRAND + np +
 						b + i + b2 + nd
 					);
 				};
@@ -113,7 +113,7 @@ $(document).ready(function () {
 						p + PiK + r[i].PowerKW + np +
 						p + man + r[i].Manufacturer + np +
 						p + yoc + r[i].YearOfConstruction + np +
-						p + pri + r[i].PriceGRAND + "000" + np +
+						p + pri + r[i].PriceGRAND + np +
 						b + i + b2 + nd
 					);
 				};
