@@ -6,6 +6,7 @@
     <meta name="author" content="Jason Steijn, Thomas Mosterd">
     <title>ChooChooShop</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/products.css" />
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/products.js"></script>
 </head>
@@ -19,26 +20,61 @@
         <input id="searchBar">
         <a href="about.html">About</a>
     </nav>
-    <side>
+    <side id="side">
         <h2>
             Search options
         </h2>
-        <p>
-            Order by -Price -Name
-        </p>
-        <p>
-            Filter options: -Power *DROPDOWN* -Manufacturer *DROPDOWN*
-        </p>
-        <button>
+        <button id='reset'>
+            refresh
+        </button>
+        </br>
+        <label class="flabel">Manufacturer</label>
+        <select id="Man">
+            <option value="default" selected >Manufacturer</option>
+            <option value="hoi">hoi</option>
+            <option value="Bombardier Transportation">hey</option> 
+            <option value="jo">jo</option>
+        </select>
+    </br> 
+        <label class="flabel">Power in kW</label>   
+        <select id="PKW">
+            <option value="default" selected >Power in Kilowatts</option>
+            <option value="2400">2400</option>
+            <option value="2000">2000</option>
+            <option value="1600">1600</option>
+            <option value="1200">1200</option>
+            <option value="800">800</option>
+        </select>
+    </br>
+        <label class="flabel">Year of construction</label>
+        <input id="YoC">
+    </br>
+        <label class="flabel">Min Price</label>
+        <input id="miPr">
+    </br>
+        <label class="flabel">Max Price</label>
+        <input id="maPr">
+    </br>
+        <button id="apply">
             Apply
         </button>
+        </section>
     </side>
     <section id="productlist">
         <h1>
             Products
         </h1>
-        <section class="product">
-
+        <section class="productsection">
+            <div class="product"></div>
+        </section>
+        <section class="moreProduct">
+        </br>
+            <button id="more">more</button>
+        </section>
+        <section class="evenMoreProduct">
+        </br>
+            <button hidden id="evenmore">more</button>
         </section>
     </section>
+
 </body>
