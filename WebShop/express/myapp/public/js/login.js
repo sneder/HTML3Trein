@@ -23,7 +23,7 @@ function submitForm() {
     console.log("Username:" + username + " password:" + password);
 
     //The main function, first getting the account information
-    $.getJSON("./data/Accounts.json", function (r) {
+    $.getJSON("data/Accounts.json", function (r) {
         console.log(r);
         console.log("Amount of users:" + r.length);
         //A loop that runs through all the users 
