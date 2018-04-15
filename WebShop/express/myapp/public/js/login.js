@@ -23,10 +23,12 @@ function submitForm() {
     var succesful = false;
     console.log("Username:" + username + " password:" + password);
 
-    //The main function
+    //The main function, first getting the account information
     $.getJSON("./data/Accounts.json", function (r) {
         console.log(r);
         console.log("Amount of users:" + r.length);
+        //A loop that runs through all the users 
+        //and checks if the entered information is the same as any of them
         for (var i = 0; i < r.length; i++) {
             console.log("Username checking: " + r[i].UserName);
             console.log("Password checking: " + r[i].Password);
@@ -40,6 +42,7 @@ function submitForm() {
             }
         }
         console.log(succesful);
+        //The actions to be executed after looping through all users.
         if (succesful) {
             //Open their profile
             window.open("../profile.html", "_self");

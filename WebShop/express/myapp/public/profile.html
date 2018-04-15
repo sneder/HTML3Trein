@@ -6,9 +6,11 @@
     <meta name="author" content="Jason Steijn, Thomas Mosterd">
     <title>ChooChooShop</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/profile.js"></script>
 </head>
 
-<body>
+<body onload="profileLoad()">
     <nav>
         <a href="index.html">Homepage</a>
         <a href="products.html">All Products</a>
@@ -38,6 +40,9 @@
         <p id="userID">
             User ID: 66648984656489
         </p>
+        <button>
+            Change information
+        </button>
     </section>
     <section id="boughtlist">
         <h2>
