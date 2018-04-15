@@ -74,6 +74,8 @@ $(document).ready(function () {
 	$("#apply").click(function () {
 		$(".product").remove();
 		$("#more").remove();
+		$(".moreProduct").remove();
+		$("#evenmore").remove();
 		$(".productsection").append(
 			'<div class="product"></div>'
 		)
