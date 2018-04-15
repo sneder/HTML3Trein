@@ -5,7 +5,7 @@ $(document).ready(function () {
 	var yoc = "Year Of Construction: "
 	var man = "Manufacturer: "
 	var PiK = "Power in KiloWatts: "
-	var pri = "Price: "
+	var pri = "Price (x1000): "
 	var np = "</p>"
 	var img1 = '<img class="trainimg" src="../Images/'
 	var img2 = '.jpg" alt="product">'
