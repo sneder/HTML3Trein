@@ -1,5 +1,5 @@
 /*
-This file contains all the functions from the profile.html page, 
+This file contains all the functions for the Profile.html page
 */
 
 //What happens when the page gets loaded
@@ -39,11 +39,11 @@ function updateInformation(username) {
         if (user.Gender = "M") {
             document.getElementById("gender").innerHTML = "Gender: Male"
         }
-        if (user.Gender = "F"){
+        if (user.Gender = "F") {
             document.getElementById("gender").innerHTML = "Gender: Female"
-        }  
+        }
 
-        document.getElementById("picture").src = "Images/"+user.UserName+".jpg"
+        document.getElementById("picture").src = "images/" + user.UserName + ".jpg"
     });
 }
 
@@ -52,14 +52,14 @@ function updateHistory(user) {
 
 }
 
-//Changing the personal information of the user
-function changeInformation(){
-
+//Going to the changeInformation.html page
+function changeInformation() {
+    window.open("changeInformation.html", "_self");
 }
 
-//Loggin out the user
-function logout(){
-    sessionStorage.user= "Nowone";
+//Logging out the user
+function logout() {
+    sessionStorage.user = "Nowone";
     window.open("login.html", "_self");
 }
 

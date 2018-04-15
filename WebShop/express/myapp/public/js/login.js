@@ -1,6 +1,5 @@
 /*
-This file contains all the functions from the login.html page, 
-aswel as for the createAccount.html page
+This file contains all the functions for the login.html
 */
 
 //Checking if someone has already logged in, if so take them to their profile, if not take them to the login page
@@ -59,10 +58,4 @@ function pageCreate(){
     window.open("createAccount.html", "_self");
 }
 
-//Creating a new entry in the database for this person
-function createAccount() {
-    var x = document.getElementById("createForm")
-    var username = x.elements["username"].value;
-    var password = x.elements["password"].value;
 
-}
